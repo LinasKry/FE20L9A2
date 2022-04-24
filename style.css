@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  aspect-ratio: 3/1;
+  flex-direction: row;
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+  min-width: 320px;
+}
+.Flex .Col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  max-width: 50%;
+  max-height: 100%;
+  flex: auto;
+  margin-right: 3px;
+}
+.Flex .Col2 {
+  background-color: white;
+  max-width: 50%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  flex: auto;
+  align-items: stretch;
+  margin-left: 3px;
+}
+
+.Flex div {
+  background: rgba(247, 91, 44, 0.952);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-size: 1em;*/
+  color: white;
+}
+.Flex .Col2 div {
+  height: 48%;
+  margin-left: 5px;
+  flex: auto;
+}
+
+.Flex .Col2 .NR {
+  font-size: 18px;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.Flex .Box1 {
+  height: 98%;
+  padding-top: 15%;
+}
+.Flex .Box2 {
+  display: flex;
+  width: 99%;
+  margin-bottom: auto;
+}
+.Flex .Box3 {
+  display: flex;
+  max-width: 49%;
+  margin-right: 5px;
+  margin-top: auto;
+}
+.Flex .Box4 {
+  display: flex;
+  max-width: 49%;
+  margin-top: auto;
+  margin-left: 5px;
+}
+
+/* GRID*/
+.Grid {
+  max-width: 900px;
+  aspect-ratio: auto 3/1;
+  background-color: white;
+  min-width: 320px;
+  margin: auto;
+  display: grid;
+  width: 100%;
+  min-height: 100%;
+  max-height: 450px;
+  padding: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 48%);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin-top: 50px;
+}
+.Grid div {
+  background: rgb(167, 222, 248);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Grid .NR {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.Grid .Box1 {
+  display: flex;
+  justify-content: center;
+  grid-row: span 2;
+  grid-column: span 2;
+  padding-top: 13%;
+}
+.Grid .Box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+}
+.Grid .Box3,
+.Grid .Box4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
